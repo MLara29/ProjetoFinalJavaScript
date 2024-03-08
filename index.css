@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+
+}
+body{
+    height: auto;
+}
+
+header{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px; 
+
+}
+.menu{
+
+    
+    width: 70%;
+    height: 70px; 
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+}
+.nav{
+    width: 90%;
+}
+.logo{
+    border: solid 1px black;
+    width: 70px;
+    height: 70px; 
+}
+.banner{
+    border: 1px solid black;
+    width: 100%;
+    height: 250px;
+}
+
+main{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+}
+.section1{
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+
+}
+.section1Contaier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.section1Titulo{
+width: 100px;
+}
+.ContainerCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    border: solid 1px black;
+    height: 100%;
+    width: 100%;
+}
+.card{
+    border: 1px solid black;
+    height: 190px;
+    width: 150px;
+  
+    
+}
+
+    
+
+.section2{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    justify-content: space-evenly;
+    height: 700px;
+    
+}
+.section2Container1{
+    border: solid 1px black;
+    height: 250px;
+    width: 200px;
+}
+.section2Container2{
+    border: solid 1px black;
+    height: 250px;
+    width: 200px;
+}
+.section3{
+    border: solid 1px black;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    
+}
+
+
+footer{
+    border: solid 1px black;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
