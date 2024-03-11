@@ -21,7 +21,7 @@ header{
     align-items: center;
     width: 100%;
     height: 300px; 
-    
+    background-color: rgba(35, 185, 226, .9);
 
 }
 .menu{
@@ -39,15 +39,16 @@ header{
 
 }
 #linkCabeçalho{
-    color: beige;
+    color: white;
     font-size: 20px;
     text-decoration:none;
     list-style-type: none;
-    background-color:rgba(35, 185, 226, .9);
+   
     
 }
 .nav{
     width: 90%;
+    
 }
 
 
@@ -71,6 +72,7 @@ main{
     justify-content: center;
     width: 100%;
     height: 700px;
+    padding-bottom: 300px;
 
 }
 .section1Contaier{
@@ -87,6 +89,8 @@ main{
  color: rgba(35, 185, 226, .9);
  position: relative;
  font-size: 25px;
+ padding-top: 200px;
+ padding-bottom: 70px;
 }
 
 .ContainerCards{
@@ -114,11 +118,21 @@ main{
     font-size: 30px;
     color: rgba(35, 185, 226, .9);
     padding-top: 10px;
+    height: 30px;
 }
 .TextoCards{
    color: rgb(126, 122, 122);
-   padding-top: 20px;
+   height: 50px;
+   padding-top: 50px;
+   margin-bottom:30px;
 }   
+.botao{
+    background-color: rgb(240, 179, 14);
+    padding: 12px;
+    border: none;
+    margin-bottom: 2px;
+    color: white;
+}
 
 .section2{
     border: solid 1px black;
