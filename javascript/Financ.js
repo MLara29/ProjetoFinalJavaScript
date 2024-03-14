@@ -3,22 +3,17 @@ function CalcularFinanciamento() {
     const taxa = parseFloat(document.getElementById("taxa").value);
     const parcelas = parseInt(document.getElementById("parcelas").value);
     const entrada = parseFloat(document.getElementById("entrada").value);
-
     const emprestimoFinal = emprestimo - entrada;
 
-    let resultado;
-
-    if (document.getElementById('sac').checked) {
-        resultado = calcularSAC(emprestimoFinal, taxa, parcelas);
-    } else {
-        resultado = calcularPRICE(emprestimoFinal, taxa, parcelas);
-    }
+    const resultado = document.getElementById('sac').checked ?
+        calcularSAC(emprestimoFinal, taxa, parcelas) :
+        calcularPRICE(emprestimoFinal, taxa, parcelas);
 
     exibirResultado(resultado);
 }
 
 function calcularSAC(emprestimo, taxa, parcelas) {
-    let prestacoes = [];
+    const prestacoes = [];
     let saldoDevedor = emprestimo;
     const amortizacao = emprestimo / parcelas;
 
@@ -33,7 +28,7 @@ function calcularSAC(emprestimo, taxa, parcelas) {
 }
 
 function calcularPRICE(emprestimo, taxa, parcelas) {
-    let prestacoes = [];
+    const prestacoes = [];
     let saldoDevedor = emprestimo;
     const juros = Math.pow((1 + taxa / 100), parcelas);
     const prestacao = emprestimo * (taxa / 100 * juros) / (juros - 1);
@@ -52,9 +47,9 @@ function exibirResultado(resultado) {
     const tabelaResultado = document.getElementById("tabelaResultado").getElementsByTagName('tbody')[0];
     tabelaResultado.innerHTML = "";
 
-    let tipoJuros = document.querySelector('input[name="tipo-juros"]:checked').value;
+    const tipoJuros = document.querySelector('input[name="tipo-juros"]:checked').value;
 
-    let tabelaHTML = "<h2>" + tipoJuros.toUpperCase() + "</h2>";
+    let tabelaHTML = `<h2>${tipoJuros.toUpperCase()}</h2>`;
 
     resultado.forEach((item, index) => {
         tabelaHTML += `<tr><td>${index + 1}</td><td>${item.prestacao}</td><td>${item.juros}</td><td>${item.amortizacao}</td><td>${item.saldoDevedor}</td></tr>`;
