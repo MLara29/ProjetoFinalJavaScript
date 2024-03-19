@@ -48,7 +48,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 100px;
-    background-color: #6322b8;  
+    background-color: white;  
 }
 .logo{
     
@@ -75,11 +75,13 @@ header{
     
 }
 #linkCabeçalho{
-    color: white;
-    font-size: 20px;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
     text-decoration:none;
     list-style-type: none;
-   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
     
 }
 .nav{
@@ -294,13 +296,79 @@ main{
     font-weight: 600;
 }
 .section3{
-    border: solid 1px black;
-    display: flex;
+    
+    
+    height: 550;
     width: 100%;
-    height: 200px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.section3Container1{
+ 
+ width: 400px;
+ height: 500px;
+ display: flex;
+ justify-content: center;
+}
+.section3Container2{
+   
+    width: 400px;
+    height: 500px; 
+    d
     
 }
 
+.section3Container3{
+    
+    width: 400px;
+    height: 500px; 
+}
+.Titulo_Section3_Cont2{
+    
+    position: relative;
+    bottom: 400px;
+    left: 40px;
+    color: #6322b8; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    font-weight: 500; 
+}
+.texto_Section3_Cont2{
+    color: #292929;; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    width: 300px;
+    position: relative;
+    bottom: 350px;
+    left: 40px;
+}
+.Titulo_Section3_Cont3{
+    position: relative;
+    left: 40px;
+    top: 100px;
+    color: #6322b8; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    font-weight: 500; 
+}
+.Lista_Section3{
+    color: #292929;; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    width: 300px;
+    position: relative;
+    top: 150px;
+    left: 40px;
+    padding-bottom: 10px;
+    text-underline-offset: 30px;
+}
+.Itens_Lista_Section3{
+    text-underline-offset: 30px;
+}
 
 footer{
     border: solid 1px black;
